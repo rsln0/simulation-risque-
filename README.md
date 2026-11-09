@@ -169,11 +169,3 @@ Les graphiques sont dans `figures/` (sur l'histogramme, la VaR paramétrique est
 - Les scénarios de stress sont des chocs choisis à la main, pas calibrés sur des crises précises.
 - Pistes : GARCH pour la volatilité, VaR sur plusieurs jours, VaR d'un produit non linéaire (option) par Monte Carlo comme dans le TD2.
 
-## Questions possibles en entretien
-
-- Pourquoi l'ES est-elle préférée à la VaR par la réglementation ? Elle tient compte de la taille des pertes au-delà de la VaR et elle est sous-additive.
-- Pourquoi la VaR normale est-elle trop basse à 99% ? Les queues réelles sont plus épaisses.
-- Que veut dire une p-valeur de 0.001 à Kupiec ? La fréquence d'exceptions est incompatible avec le niveau de confiance annoncé.
-- Pourquoi Cholesky ? Pour simuler des actifs corrélés à partir de lois normales indépendantes.
-- Pourquoi multiplier la covariance par 4 et pas par 2 ? La covariance est en volatilité au carré.
-- Différence entre VaR marginale et conditionnelle ? La marginale utilise toute la période de la même façon, la conditionnelle (EWMA) donne plus de poids aux jours récents.
